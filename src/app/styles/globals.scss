@@ -1,0 +1,48 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "0.0-search.scss";
+@import "1.0-selected.scss";
+@import "1.1-6-conditions.scss";
+@import "2.0-forecast-five.scss";
+@import "3.0-storage-render";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Courier New", Courier, monospace;
+
+  body {
+    color: $dark;
+  }
+
+  .custom-background {
+    background-image: url("../../../public/img/tree.webp");
+    background-size: cover;
+
+    .custom-interface {
+      @include glass-effect;
+      @include border($radius);
+      box-shadow: 0 10px 100px -50px $dark;
+    }
+  }
+
+  // Error Handling
+  .custom-error {
+    @include glass-effect;
+    border-radius: $radius;
+  }
+
+  // Bottom Attribution
+  i {
+    position: absolute;
+    bottom: 1vh;
+  }
+  a {
+    color: $contrastOriginal;
+
+    font-size: 1.075rem;
+    text-decoration: none;
+  }
+}
