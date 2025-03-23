@@ -45,6 +45,8 @@ This is a weather forecast web application with back-end logging of user actions
 
 ## Future Improvements
 - Send log data into the **Turso** database.
+- Deploy application.
+- Cover with units tests.
 - Redesign current layout for better mobile experience.
 
 ## Summary
