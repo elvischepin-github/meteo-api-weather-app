@@ -2,6 +2,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+import { logger } from "../../../lib/logger";
+
 import { Button } from "react-bootstrap";
 
 export default function StorageRender() {
@@ -11,6 +13,10 @@ export default function StorageRender() {
   const handleButton = (e) => {
     const city = e.target.innerText;
     router.push(`/?city=${encodeURIComponent(city)}`);
+
+    logger("search_again_storage", { searched: city }).catch((er) => {
+      console.error("Failed to log search_again_storage:", er);
+    });
   };
 
   useEffect(() => {

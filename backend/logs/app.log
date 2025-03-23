@@ -1,0 +1,3 @@
+{"level":"info","message":{"action":"search_again_storage","details":{"searched":"Vilnius"},"method":"POST"},"timestamp":"2025-03-23T18:33:14.934"}
+{"level":"info","message":{"action":"search_again_storage","details":{"searched":"Akuotai"},"method":"POST"},"timestamp":"2025-03-23T18:33:28.961"}
+{"level":"info","message":{"action":"search_type_field","details":{"searched":"Akmenė"},"method":"POST"},"timestamp":"2025-03-23T18:33:37.077"}

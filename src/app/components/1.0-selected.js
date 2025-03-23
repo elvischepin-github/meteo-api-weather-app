@@ -1,4 +1,4 @@
-import "../styles/compiled-globals.css";
+import "../styles/globals.css";
 
 export default function Selected({ city, airTemperature, conditionCode }) {
   const now = new Date();
