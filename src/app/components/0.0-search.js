@@ -1,8 +1,21 @@
+"use client";
+import "./../styles/globals.css";
+
 import { Form, Button } from "react-bootstrap";
 
+import { logger } from "../../../lib/logger";
+
 export default function Search({ allCities, submitCity }) {
+  const logSubmit = (e) => {
+    const formData = new FormData(e.target);
+    const searchedCity = formData.get("city");
+
+    logger("search_type_field", { searched: searchedCity }).catch((er) => {
+      console.error("Failed to log search_type_field:", er);
+    });
+  };
   return (
-    <Form action={submitCity}>
+    <Form action={submitCity} onSubmit={logSubmit}>
       <Form.Control
         autoFocus
         className="mb-3 px-4 custom-input"
