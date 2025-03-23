@@ -5,7 +5,10 @@ export default function SeaLevelPressure({ seaLevelPressure }) {
         <img src="conditions/pressure.svg" />
         <p>Pressure</p>
       </div>
-      <h2>{seaLevelPressure} hPa</h2>
+      <h2>
+        {seaLevelPressure}
+        <sup>hPa</sup>
+      </h2>
     </article>
   );
 }

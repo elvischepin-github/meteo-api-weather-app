@@ -21,7 +21,7 @@ form .custom-input:focus {
   position: absolute;
   top: 0;
   right: 0;
-  width: 2rem;
+  width: 1.4rem;
   padding: 7px 0;
   background-color: rgba(233, 154, 93, 0.8274509804);
   border: none;
@@ -36,7 +36,7 @@ form .custom-input:focus {
 }
 
 .custom-selected-article img {
-  width: clamp(100px, 50%, 400px);
+  width: clamp(75px, 10vw, 300px);
 }
 .custom-selected-article h1 {
   font-size: clamp(2rem, 1.5vw, 4rem);
@@ -51,7 +51,7 @@ form .custom-input:focus {
 
 .custom-condition-article div img {
   height: clamp(2rem, 3vw, 3rem);
-  width: clamp(2rem, 3vw, 3rem);
+  width: clamp(1rem, 3vw, 3rem);
 }
 .custom-condition-article div p {
   font-size: clamp(1rem, 1.5vw, 1.5rem);
@@ -70,7 +70,7 @@ form .custom-input:focus {
   width: clamp(20px, 30%, 200px);
 }
 .custom-forecast-five h6 {
-  font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+  font-size: clamp(0.5rem, 2vw, 1.5rem);
 }
 
 .custom-storage-btn {
@@ -96,6 +96,8 @@ form .custom-input:focus {
 * .custom-background {
   background-image: url("../../../public/img/tree.webp");
   background-size: cover;
+  height: 100%;
+  padding-bottom: 50px;
 }
 * .custom-background .custom-interface {
   backdrop-filter: blur(20px);
@@ -104,14 +106,19 @@ form .custom-input:focus {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 100px -50px #091828;
 }
+@media (min-width: 415px) {
+  * .custom-background {
+    height: 100vh;
+    width: 100vw;
+  }
+  * .custom-background .custom-interface {
+    height: max-content;
+  }
+}
 * .custom-error {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 16px;
-}
-* i {
-  position: absolute;
-  bottom: 1vh;
 }
 * a {
   color: #e99a5d;

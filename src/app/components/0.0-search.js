@@ -24,7 +24,7 @@ export default function Search({ allCities, submitCity }) {
         name="city"
         placeholder="Which city?"
       />
-      <datalist id="cities">
+      <datalist style={{ display: "none" }} id="cities">
         {allCities.map((item) => {
           return <option key={item.code} value={item.name} />;
         })}
