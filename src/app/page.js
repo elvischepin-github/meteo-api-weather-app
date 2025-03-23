@@ -44,7 +44,7 @@ export default async function Home({ searchParams }) {
   const allCities = await fetchAllPlaces();
 
   return (
-    <main className="vh-100 vw-100 d-flex flex-column align-items-center justify-content-center custom-background">
+    <main className="d-flex flex-column align-items-center justify-content-center custom-background">
       {/* Search */}
       <Search allCities={allCities} onSubmit={getDataFromSearchForm} />
       {/* Storage */}
@@ -67,7 +67,7 @@ export default async function Home({ searchParams }) {
               </Col>
 
               {/* Conditions */}
-              <Col md={8} className="d-flex flex-column">
+              <Col sm md={8} className="d-flex flex-column">
                 <Row className="h-50">
                   <Col>
                     <FeelsLikeTemperature
