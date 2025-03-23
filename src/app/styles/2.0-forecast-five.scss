@@ -1,0 +1,14 @@
+.custom-forecast-five {
+  img {
+    width: clamp(2rem, 3vw, 3rem);
+  }
+  h4 {
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+  }
+  hr {
+    width: clamp(20px, 30%, 200px);
+  }
+  h6 {
+    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+  }
+}

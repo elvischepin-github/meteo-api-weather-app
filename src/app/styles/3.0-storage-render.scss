@@ -1,0 +1,7 @@
+.custom-storage-btn {
+  @include button;
+
+  border-radius: $radius;
+
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
