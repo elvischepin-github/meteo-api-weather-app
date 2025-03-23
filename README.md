@@ -51,8 +51,8 @@ This is a weather forecast web application with back-end logging of user actions
 
 ## Summary
 Project taught me to rethink my designing approach, mobile-first approach might be better way to build layouts.
-I Faced challange with five day forecast, key idea was to create new array of objects that has an individual day its temperatures array.
-Another challange understanding Next.js `use client` and `use server` components.
+I faced challange with five day forecast, key idea was to create new array of objects that has an individual day its temperatures array.
+Another challange understanding Next.js `use client` and `use server` components when working with asynchronous actions and vice versa.
 Lastly, difficulties were seen in the back-end production with **Winston**, where requestis failed in Firefox due to the HTTP/HTTPS security restrictions (`NS_BINDING_ABORTED`).
 My design goal was to not overload user with too many elements, keeping it simple worked well.
 I am grateful for this oppurtinity to build application and grow my skills.
