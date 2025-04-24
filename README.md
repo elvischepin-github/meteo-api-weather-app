@@ -2,7 +2,8 @@
 
 **Disclaimer**  
 > Data in this project is provided by the [Meteo.lt](https://api.meteo.lt/) API, courtesy of the Lithuanian Hydrometeorological Service (LHMT). This data is licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0). To view the license, visit [Creative Commons](https://creativecommons.org/licenses/by/4.0/). The data is presented "as is," and while every effort has been made to ensure its proper integration, I am not responsible for any inaccuracies, delays, or errors in the data provided by the API.
-
+---
+![Screenshot 2025-03-23 at 21 00 32](https://github.com/user-attachments/assets/6feefcb1-44ff-426a-aa8f-a3f8da1dd9d1)
 ## About
 This is a weather forecast web application with back-end logging of user actions.
 
@@ -56,6 +57,3 @@ Another challange understanding Next.js `use client` and `use server` components
 Lastly, difficulties were seen in the back-end production with **Winston**, where requestis failed in Firefox due to the HTTP/HTTPS security restrictions (`NS_BINDING_ABORTED`).
 My design goal was to not overload user with too many elements, keeping it simple worked well.
 I am grateful for this oppurtinity to build application and grow my skills.
-
----
-![Screenshot 2025-03-23 at 21 00 32](https://github.com/user-attachments/assets/6feefcb1-44ff-426a-aa8f-a3f8da1dd9d1)
