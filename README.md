@@ -25,35 +25,8 @@ This is a weather forecast web application with back-end logging of user actions
 - React Bootstrap
 - Node.js (Express, Winston, CORS)
 
-## Structure of the Project
-- `/src/app/layout.js`: Root layout rendering (includes API contribution)
-- `/src/app/page.js`: Main page layout
-- `/src/app/components`: All components
-- `/src/app/styles/globals.css`: Styling rules (compiled from `/src/app/styles/globals.scss`)
-- `/src/app/styles`: Contains individual '.scss' files
-- `/src/app/utils`: Exported utility/helper functions
-- `/src/app/api`: All API routes
-
-- `/backend/server.js`: Express server with Winston logging and Cors activation
-- `/lib/logger.js`: Logger function to data logging
-- `/backend/logs/app.log`: Log file for application logs
-
 ## How to Run Project
 1. Clone or download project folder.
 2. Open folder (root folder) in terminal and run `npm run dev` to start Next.js server.
 3. (Optional) Open second terminal (root folder) and run `sass --watch ./src/app/styles/globals.scss:./src/app/styles/globals.css` (to compile `global.scss` file into the `global.css`.
 4. Open third terminal in the `/backend` folder and run `npm start` to launcg back-end logger.
-
-## Future Improvements
-- Send log data into the **Turso** database.
-- Deploy application.
-- Cover with units tests.
-- Redesign current layout for better mobile experience.
-
-## Summary
-Project taught me to rethink my designing approach, mobile-first approach might be better way to build layouts.
-I faced challange with five day forecast, key idea was to create new array of objects that has an individual day its temperatures array.
-Another challange understanding Next.js `use client` and `use server` components when working with asynchronous actions and vice versa.
-Lastly, difficulties were seen in the back-end production with **Winston**, where requestis failed in Firefox due to the HTTP/HTTPS security restrictions (`NS_BINDING_ABORTED`).
-My design goal was to not overload user with too many elements, keeping it simple worked well.
-I am grateful for this oppurtinity to build application and grow my skills.
